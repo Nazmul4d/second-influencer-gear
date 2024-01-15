@@ -6,16 +6,25 @@
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
     font-family: 'Work Sans', sans-serif;
+    /* margin: 0 auto;
+    padding: 0 auto; */
 }
 
 header{
-    background: #f3dada;
+    background: #FFF;
     padding: 80px 120px;
+    width: 1400px;
+    margin: 0 auto;
+    
 }
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 1200px;
+    align-items: center;
+    /* border: 2px solid red; */
+   
 }
 
 .nav-title{
@@ -38,4 +47,88 @@ nav li{
 nav li a{
     text-decoration: none;
     color: #3A3A3A;
+}
+
+/* banner section style  */
+main{
+    display: flex;
+    height: 400px;
+    gap: 50px;
+    justify-content: center;
+    margin: 0 auto;
+    border: 2px solid tomato;
+}
+.bannner-title{
+    width: 582px;
+    height: 133px;
+    color: #3A3A3A; 
+    font-size: 3.2rem;
+    font-weight: 700; 
+}
+.banner-content{
+    color: #3A3A3A;
+    width: 505px;
+    height: 60.9px;
+    font-size: 1rem;
+    font-weight: 600
+}
+.btn{
+    display: inline-flex;
+    padding: 10px 24px;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 41px;
+    background: #E02C6D;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 700;
+ }
+ .banner-img{
+    background-image: url(../images/Circle\ design.svg);
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+ }
+ .banner-img img{
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    width: 80%;
+    transform: translateY(100px);
+
+ }
+ .logo-section{
+    margin-left: 150px;
+    margin-top: 150px;
+ }
+ .logo-section ul{
+    display: flex;
+    
+ }
+ .logo-section ul li{
+    list-style: none;
+    margin-right: 50px;
+ }
+
+
+
+
+
+/* responsive styles media */
+@media screen   and (max-width: 576px)  {
+    header{
+        padding: 80px 120px;
+     }
+     nav{
+        flex-direction: column;
+     }
+     main{
+        padding: 20px;
+     }
+     .bannner-title{
+        flex-direction: column;
+     }
+     .banner-img img{
+        flex-direction: column-reverse;
+     }
 }
